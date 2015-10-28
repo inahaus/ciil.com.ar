@@ -1,0 +1,464 @@
+/*
+ *
+ * Description: CIIL | Centro de Ingeniería Industrial del Litoral
+ * Author: INAHAUS
+ * Author URL: http://inahaus.com
+ *
+ */
+
+
+body {
+    background: #fff;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #595757;
+    font-size: 12px;
+}
+
+.violet { color: #e30615; }
+
+a {
+    color: #e30615;
+    text-decoration: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+a:hover { color: #595757; text-decoration: none; }
+
+strong { font-weight: bold; }
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/din-regular-webfont.eot');
+    src: url('../fonts/din-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din-regular-webfont.woff') format('woff'),
+         url('../fonts/din-regular-webfont.ttf') format('truetype'),
+         url('../fonts/din-regular-webfont.svg#dinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dinbold';
+    src: url('../fonts/din-bold-webfont.eot');
+    src: url('../fonts/din-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din-bold-webfont.woff') format('woff'),
+         url('../fonts/din-bold-webfont.ttf') format('truetype'),
+         url('../fonts/din-bold-webfont.svg#dinbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dinmedium';
+    src: url('../fonts/din-medium-webfont.eot');
+    src: url('../fonts/din-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din-medium-webfont.woff') format('woff'),
+         url('../fonts/din-medium-webfont.ttf') format('truetype'),
+         url('../fonts/din-medium-webfont.svg#dinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ----- Header ----- */
+
+.header .navbar {
+    margin-bottom: 0;
+}
+
+.header .navbar-inner {
+    background: #fff;
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.header .navbar-inner .slogan {
+    font-family: 'dinregular';
+    font-size: 14px;
+    color: #9a999e;
+    text-align: right;
+    margin: 96px 0px 0px 0px; /* Arriba Derecha Abajo Izquierda */
+}
+
+.header h1 {
+    float: left;
+    margin: 0;
+    text-align: left;
+}
+
+.header a.brand {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 370px;
+    height: 79px;
+    margin: 40px 0px 25px -2px;
+    background: url(../img/ciil-logo.png) 0px center no-repeat;
+}
+
+.header ul.nav {
+    width: 960px;
+    background-image: -webkit-gradient(
+    linear,
+    right bottom,
+    left bottom,
+    color-stop(0, #E30615),
+    color-stop(1, #D60B52));
+    background-image: -o-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: -moz-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: -webkit-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: -ms-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: linear-gradient(to left, #E30615 0%, #D60B52 100%);
+}
+
+.header ul.nav li a {
+    font-family: 'dinregular';
+    line-height: 20px;
+    font-size: 17px;
+    color: #fff;
+    text-shadow: none;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+}
+
+.header ul.nav li.current-page a {
+    opacity: 0.5;
+}
+
+.header ul.nav li a:hover {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.header ul.nav li a i {
+    line-height: 35px;
+    color: #aaa;
+}
+
+.header ul.nav li a:hover i { color: #fff; }
+
+
+/* ----- SLIDER ----- */
+
+.slider {
+    margin: 0 auto;
+    height: 410px;
+    background: url(../img/slide.png) bottom no-repeat;
+}
+
+.flexslider {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.flex-caption {
+    position: absolute;
+    bottom: 20px;
+    max-width: 920px;
+    padding: 10px 20px;
+    margin: 0;
+    background: #1d1d1d; /* browsers that don't support rgba */
+    background: rgba(0, 0, 0, .7);
+    font-size: 14px;
+    line-height: 24px;
+    color: #eaeaea;
+    text-align: left;
+    font-style: italic;
+}
+
+
+/* ----- COLUMNAS HOME ----- */
+
+.what-we-do {
+    width: 960px;
+}
+
+.what-we-do .service {
+    padding-bottom: 23px;
+}
+
+.what-we-do .service .titulo {
+    width: 224px;
+    text-align: left;
+    padding: 25px 0px 25px 10px;
+    background-image: -webkit-gradient(
+    linear,
+    right bottom,
+    left bottom,
+    color-stop(0, #E30615),
+    color-stop(1, #D60B52));
+    background-image: -o-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: -moz-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: -webkit-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: -ms-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: linear-gradient(to left, #E30615 0%, #D60B52 100%);
+}
+
+.what-we-do .service h4 {
+    font-family: 'dinregular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.what-we-do .service p {
+    font-size: 14px;
+    margin-right: 1px;
+    padding-top: 25px;
+    line-height: 18px;
+}
+
+.what-we-do .service a {
+    padding-top: 25px;
+    color: #595757;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* ----- TÍTULO DE PÁGINA ----- */
+
+.page-title {
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    text-align: left;
+}
+
+.page-title h2 {
+    display: inline;
+    margin-left: 10px;
+    font-family: 'dinbold', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #595757;
+    text-shadow: none;
+    vertical-align: middle;
+}
+
+.page-title p {
+    display: inline;
+    margin-left: 5px;
+    font-size: 14px;
+    font-style: italic;
+    vertical-align: middle;
+}
+
+.page-title-icon {
+    margin-left: 20px;
+    font-size: 46px;
+    color: #ccc;
+    vertical-align: middle;
+}
+
+
+/********** ----- FORMATO TEXTO ----- **********/
+
+.contact-us {
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.contact-us h4 {
+    margin: 0px 0px 10px 0px; /* Arriba Derecha Abajo Izquierda */
+    padding: 0px;
+    font-family: 'dinbold', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #5d5d5d;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+.contact-us h5 {
+    margin: 0px 0px 30px 70px; /* Arriba Derecha Abajo Izquierda */
+    padding: 0px;
+    font-family: 'dinbold', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #5d5d5d;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+.contact-us p {
+    margin: 0px 15px 20px 0px; /* Arriba Derecha Abajo Izquierda */
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.contact-us ul {
+    line-height: 18px;
+    font-size: 14px;
+}
+
+/* ----- Form ----- */
+
+.contact-form {
+    padding: 0;
+    padding-top: 18px;
+}
+
+.contact-form p {
+    margin-top: 0px;
+}
+
+.contact-us form {
+    margin-top: 0px;
+    padding: 0 0px;
+}
+
+.contact-us form label {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contact-us form input, .contact-us form textarea {
+    width: 95%;
+    height: 24px;
+    border: 1px solid #ddd;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888;
+    font-size: 13px;
+}
+
+.contact-us form input:focus, .contact-us form textarea:focus {
+    border: 1px solid #bbb;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.contact-us form textarea {
+    height: 160px;
+}
+
+.contact-us form button {
+    width: 120px;
+    height: 30px;
+    margin-top: 15px;
+    border: 0;
+    font-family: 'dinregular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #fff;
+    background-image: -webkit-gradient(
+    linear,
+    right bottom,
+    left bottom,
+    color-stop(0, #E30615),
+    color-stop(1, #D60B52));
+    background-image: -o-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: -moz-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: -webkit-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: -ms-linear-gradient(left, #E30615 0%, #D60B52 100%);
+    background-image: linear-gradient(to left, #E30615 0%, #D60B52 100%);
+}
+
+.contact-us form button:hover {
+    opacity: 0.8;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.contact-us form button:active {
+    -moz-box-shadow:
+        0 5px 10px 0 rgba(0,0,0,.15) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    -webkit-box-shadow:
+        0 5px 10px 0 rgba(0,0,0,.15) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    box-shadow:
+        0 5px 10px 0 rgba(0,0,0,.15) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+}
+
+.contact-us form input:-moz-placeholder, .contact-us form textarea:-moz-placeholder { color: #ccc; }
+.contact-us form input:-ms-input-placeholder, .contact-us form textarea:-ms-input-placeholder { color: #ccc; }
+.contact-us form input::-webkit-input-placeholder, .contact-us form textarea::-webkit-input-placeholder { color: #ccc; }
+
+
+/********** ----- FOOTER ----- **********/
+
+footer {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+footer .widget {
+    margin-top: 20px;
+    text-align: left;
+}
+
+footer .widget h4 {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #5d5d5d;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
+}
+
+footer .widget p {
+    line-height: 24px;
+}
+
+footer .widget i {
+    padding-right: 7px;
+}
+
+footer .footer-border {
+    margin-top: 30px;
+    height: 85px;
+    background: url(../img/footer.png);
+}
+
+footer .copyright {
+    margin-top: 12px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+footer .copyright p {
+    font-size: 14px;
+}
+
+footer .firma {
+    font-family: Helvetica, sans-serif;
+    margin-top: 12px;
+    margin-left: 20px;
+    text-align: right;
+}
+
+footer .firma a{
+    font-weight: bolder;
+    color: #000;
+}
+
+footer .social {
+    margin-top: 10px;
+    text-align: right;
+}
+
+footer .social a {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    margin: 0 0 0 6px;
+    vertical-align: middle;
+}
+
+footer .social a.facebook { background: url(../img/social-icons/facebook.png) left bottom no-repeat; }
+footer .social a.linkedin { background: url(../img/social-icons/linkedin.png) left bottom no-repeat; }
+
+footer .social a:hover { background-position: left top; }
